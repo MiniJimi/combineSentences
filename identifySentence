@@ -1,0 +1,35 @@
+#define a function
+    #should 'identify questions by looking at the first word
+    #should return the formated sentence with correct punctuation "?" or "."
+    
+
+#store user's input into an empty list
+
+#create a while loop
+    #breaks if user types /end
+    #adds to list []
+    #use the join method to concat strings
+
+#print the concat results
+
+def identifySentence(sentence):
+    capSentence=sentence.capitalize()
+    questionWords="where","what","when","how","who"
+
+    if sentence.startswith(questionWords):
+        return "{}?".format(capSentence)
+    else:
+        return "{}.".format(capSentence)
+
+results=[]
+
+while True:
+    input_sentence=input("Say something: ")
+    if input_sentence=="\end":
+        break
+    else:
+        results.append(identifySentence(input_sentence))
+        joinResults=" ".join(results)
+
+print(joinResults)
+
