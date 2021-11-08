@@ -1,7 +1,6 @@
 #define a function
     #should 'identify questions by looking at the first word
-    #should return the formated sentence with correct punctuation "?" or "."
-    
+    #should return the formated sentence with correct punctuation "?" or "." 
 
 #store user's input into an empty list
 
@@ -32,4 +31,3 @@ while True:
         joinResults=" ".join(results)
 
 print(joinResults)
-
