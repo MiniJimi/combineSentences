@@ -1,6 +1,4 @@
-abcd=123
-
-with open("hiddenGem/bear") as wordFile:
-    cde=4
-    content=wordFile.read()
+with open("hiddenGem/file.txt", "w") as file:
+    content=file.write("snail")
     
+
